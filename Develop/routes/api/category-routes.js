@@ -28,7 +28,7 @@ router.get('/:id', async (req, res) => {
     })
     if (!categoryData) {
       // if there's no matching category, then error message
-      res.status(404).json({ message: "NO DATA FOR THIS ID 🧁✨🐱‍👤" })
+      res.status(404).json({ message: "NO DATA FOR THIS ID" })
       return;
     }
     // otherwise, returns data
